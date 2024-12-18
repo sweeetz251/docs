@@ -14,7 +14,9 @@ meaning_of_life: 42
 
 # and they can be nested if needed
 nested:
-  values:
+  values: {% data foo.bar.meaning_of_life %}
+
+{% data foo.bar.nested.values.too %}
     too: Yes!
 ```
 
